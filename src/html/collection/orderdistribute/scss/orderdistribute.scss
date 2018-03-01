@@ -1,0 +1,36 @@
+@charset 'utf-8';
+@import '../../../../assets/scss/common.scss';
+//弹框
+.custom_alert{
+   &.layui-layer{
+       z-index: 100; 
+       top: 10%;
+       position: fixed;
+       margin: 0 auto;
+       left:0;
+       right:0;
+       width:80%;
+        #aa {
+            max-height:500px;
+            overflow: auto;
+        }
+       &.alert{
+           @media screen and (max-width: 1680px) {
+               top:20px;
+                 #aa {
+                    max-height:418px;
+                    overflow: auto;
+                }
+           }
+       }
+   }
+   .layui-form{
+       padding: 10px 20px 0 20px;
+       .layui-form-label{
+           width:auto;
+       }
+       .layui-inline{
+           margin-right:0;
+       }
+   }
+}

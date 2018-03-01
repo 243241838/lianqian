@@ -1,0 +1,114 @@
+html,body{
+    background:#fff;
+}
+.container{
+    padding:20px 20px 80px 20px;
+    background:#fff;
+    .animate{
+        animation: moveTop 1s;
+        -webkit-animation: moveTop 1s;
+        animation-fill-mode: both;
+        -webkit-animation-fill-mode: both;
+    }
+}
+.box{
+    background: #fff;
+}
+
+@keyframes moveTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+// 折叠头部颜色
+.layui-colla-title{
+    background: #e3e3e3;
+    color:#5a5e5c;
+}
+// 表格tr,td居中
+.layui-table tbody tr td, .layui-table thead th{
+    &.pointer{
+        cursor:pointer;
+    }
+    text-align: center;
+}
+//表格点击删除添加，编辑鼠标
+.layui-table tbody tr td{
+    span{
+        &.name{
+            color:#37a3ff;
+            cursor: pointer;
+        }
+    }
+    .layui-btn-custom{
+        //编辑
+        &.edit{
+            color:#37a3ff;
+        }
+        //禁用
+        &.forbidden{
+            color:#ff8c6c;
+        }
+    }
+}
+//公用radius
+.radius{
+    border-radius: 7px;
+}
+//重写添加按钮
+.layui-btn-custom{
+    color:#37a3ff;
+    border:1px solid #e3e3e3;
+    background: #fff;
+    opacity: 1;
+    &:hover{
+        color: #01AAED;
+    }
+}
+.hoverBlue:hover{
+    color: #37a3ff !important;
+}
+.layui-icon-top{
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+//旋转180度
+.rotate{
+    transform:rotate(180deg);
+    display: inline-block;
+}
+//字体颜色
+.blue {
+    color:#37a3ff;
+    cursor:pointer;
+}
+//表单 inline重写
+//表单重新
+.layui-form-item {
+    &.form{
+         .layui-inline{
+              margin-bottom:15px;
+         }
+    }
+}
+.page_select {
+    width:50px;
+    height:28px;
+    line-height:28px;
+    position:relative;
+    top:2px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    color: #333;
+    font-size: 12px;
+    text-align:center;
+}

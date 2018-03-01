@@ -1,0 +1,40 @@
+@charset 'utf-8';
+@import '../../../../assets/scss/common.scss';
+//重写input的有无border
+.layui-form-item{
+         input{
+            border-color:#fff;
+        }
+        .layui-input:hover{
+            border-color:#fff!important;
+        }
+        &.edit{
+            .layui-input{
+                border-color:#e6e6e6;;
+            }
+            .layui-input:hover{
+                border-color:#e6e6e6!important;
+            }
+        }
+}
+//弹框
+.custom_alert{
+   &.layui-layer{
+       z-index: 100; 
+       top: 30%;
+       position: fixed;
+       margin: 0 auto;
+       left:0;
+       right:0;
+       width:350px;
+   }
+   .layui-form{
+       padding: 10px 20px 0 20px;
+       .layui-form-label{
+           width:auto;
+       }
+       .layui-inline{
+           margin-right:0;
+       }
+   }
+}

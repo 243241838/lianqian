@@ -1,0 +1,153 @@
+@charset 'utf-8';
+@import '../../../../assets/scss/common.scss';
+.write{
+    padding-bottom:20px;
+    // width:1200px;
+    display: table;
+    margin: 0 auto; 
+    .year{
+        width:930px;
+        height:66px;
+        background: url(../images/year.png) no-repeat center center;
+        margin-left:15px;
+        text-align: center;
+        line-height: 56px;
+        font-size:24px;
+        color:#fff;
+        margin-bottom:40px;
+        &.padding_top{
+            margin-top:40px;
+        }
+    }
+    .month{
+        font-size:16px;
+        color:#5a5e5c;
+        padding-left:107px;
+        .monthDate{
+            // width:149px;
+            cursor: pointer;
+            width:126px;
+            background: url(../images/ye.png) no-repeat right bottom;
+            &.show{
+               background: url(../images/fff.png) no-repeat right bottom;
+            }
+            text-align: center;
+            .icon{
+                .rotate{
+                      display: inline-block;
+                      transform:rotate(-90deg);
+                }      
+                .layui-icon{
+                    font-size:23px;
+                    color:#e3e3e3
+                }
+            }
+        }
+        .day{
+            // height:127px;
+            min-height:117px;
+            .left{
+               display: inline-block;
+               width:120px;
+               height:100%;
+               min-height: 117px;
+               border-right:6px solid #d7edff;
+               position: relative;
+               color:#86c7ff;
+               div:first-child{
+                    padding-top:30px;
+               }
+               div:last-child{
+                    background: #fff;
+                    position: absolute;
+                    right:-14px;
+                    top:36px;
+                    img{
+                        padding: 7px 0;
+                    }
+               }
+            }
+            .right{
+               display: inline-block;
+               margin-left:41px;
+               min-height:85px;
+               position: relative;
+               top:8px;
+               >div{
+                   float: left;
+               }
+               .head{
+                   width:10px;
+                   height:85px;
+                   background: url(../images/jiao.png) no-repeat left center;
+                   position: absolute;
+                   top:50%;
+                   margin-top:-40px;
+               }
+               .text{
+                   width:auto;
+                   margin-left:8px;
+                   background: #efefef;
+                   min-height:85px;
+                   padding: 0 33px 0 16px;
+                   border-radius: 7px;
+                   >div{
+                       display: inline-block;
+                   }
+                   .img{
+                       width:52px;
+                       height:52px;
+                        position: absolute;
+                        top:50%;
+                        margin-top:-26px;
+                       float: left;
+                   }
+                   .content{
+                      padding-top:8px;
+                      margin-left:65px;
+                      .tittle{
+                        //   line-height: 34px;
+                        margin-bottom:5px;
+                        padding-top:5px;
+                      }
+                      >div:last-child{
+                          font-size:14px;
+                        //   line-height: 32px;
+                          max-width:600px;
+                      }
+                      .section{
+                          color:#2EA0FF;
+                      }
+                   }
+               }
+            }
+        }
+        .over{
+            height:50px;
+            margin-bottom:60px;
+            .left{
+               display: inline-block;
+               width:120px;
+               height:100%;
+               border-right:6px solid #d7edff;
+               position: relative;
+               color:#86c7ff;
+               div:first-child{
+                    padding-top:20px;
+               }
+               div:last-child{
+                    background: #fff;
+                    position: absolute;
+                    right:-14px;
+                    top:30px;
+               }
+            }
+            .right{
+                display: inline-block;
+                margin-left:40px;
+                padding-top:25px;
+                color:#86c7ff;
+            }
+        }
+    }
+}

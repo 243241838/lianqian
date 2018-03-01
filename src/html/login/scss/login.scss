@@ -1,0 +1,160 @@
+@charset 'utf-8';
+body, html{
+    min-width: 1200px;
+    padding:0;
+    margin:0;
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+    .box{
+        width:100%;
+        height: 100%;
+        .loginpage{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+.containerBox{
+    width:100%;
+    height: 100%;
+    background:url(../images/bg.png) no-repeat center center;
+    background-size: content 100%;
+    // overflow: scroll;
+    .container{
+        position: relative;
+        min-width: 1200px;
+        width:1200px;
+        height: 100%;
+        margin:0 auto;
+    }
+}
+.nav{
+    position:relative;
+    min-width: 1200px;
+    width:1200px;
+    line-height: 132px;
+    height: 132px;
+    // @media screen and (max-width:1200px){
+    //     line-height: 66px;
+    //     height: 66px;
+    // }
+    margin:0 auto;
+    h1{
+        float:left;
+        font-size:32px;
+        font-weight: 900;
+        color:#838383;
+    }
+    h2{
+        float:left;
+        font-size:32px;
+        color:#a8afac;
+        padding-left:28px;
+    }
+}
+.login{ 
+    height:330px;
+    width:280px;
+    padding: 20px;
+    margin-top:88px;
+    background: #fff;
+    border-radius: 4px;
+    position:absolute;
+    right:100px;
+    z-index:99;
+}
+.login h1{ 
+    text-align:center; 
+    color:#656b6e; 
+    font-size:16px; 
+    margin-bottom:40px; 
+}
+.form_code{ 
+    position:relative; 
+}
+.form_code .code{ 
+    position:absolute; 
+    right:0; 
+    top:1px; 
+    cursor:pointer; 
+}
+.login_btn{
+    margin-top:40px;
+    width:100%;
+    font-size:14px;
+}
+
+#demo {
+    width: 280px;
+    text-align: left;
+}
+
+#slider {
+  width: 280px;
+  height: 40px;
+  position: relative;
+  border-radius: 2px;
+  background: url(../images/slidebg.png) no-repeat;
+  border:1px solid #e3e3e3;
+  /*overflow: hidden;*/
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#slider_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+#label {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  background: url(../images/slide1.png) no-repeat;
+  z-index: 3;
+  cursor: move;
+  font-size: 16px;
+  font-weight: 900;
+}
+#target{
+  position: absolute;
+  top:0;
+  width:50px;
+  height: 40px;
+  line-height: 40px;
+  left:150px;
+  background: url(../images/slide2.png) no-repeat;
+  z-index: 3;
+}
+
+#labelTip {
+  position: absolute;
+  left: 0;
+  top:40px;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: 'Microsoft Yahei', serif;
+  color: #787878;
+  line-height: 38px;
+  text-align: center;
+  z-index: 2;
+}
+.description{
+    float:right;
+    padding-top:16px;
+    color:#ff775c;
+    font-size:16px;
+}
+.yellow{
+    color:#ff775c !important;
+}

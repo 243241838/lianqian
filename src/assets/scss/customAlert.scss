@@ -1,0 +1,35 @@
+.custom_alert{
+    width: 450px;
+    min-height: 100px;
+    max-height: 450px;
+    &.layui-layer{
+        z-index: 100;
+        top: -200px;
+        left: 0;
+        right:0;
+        bottom: 0;
+        margin: auto;
+        position: fixed;
+        @media screen and (max-width:414px){
+            min-width:414px;
+            left:0%;
+            top:10%;
+        }
+        @media screen and (max-width:375px){
+            min-width:375px;
+            left:0%;
+            top:10%;
+        }
+        @media screen and (max-width:320px){
+            min-width:320px;
+            left:0%;
+            top:0%;
+        }
+    }
+    .layui-form{
+        padding: 10px 20px 0 20px;
+        .layui-form-label{
+            width:auto;
+        }
+    }
+}

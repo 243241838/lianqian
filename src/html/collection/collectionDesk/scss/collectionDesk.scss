@@ -1,0 +1,63 @@
+@charset 'utf-8';
+@import '../../../../assets/scss/common.scss';
+@import '../../../../assets/fonts/iconfont.css';
+.label{
+    width:100px;
+}
+.padding0{
+    padding:0;
+}
+.clear{
+    content:'.';
+    clear:both;
+    overflow:hidden;
+}
+.fl {
+    float:left;
+}
+.info{
+    min-width:600px;
+    height: 400px;
+    margin-right:40px;
+    padding:20px;
+    border:1px solid #e3e3e3;
+}
+.layui-form-select dl{
+    max-height: 200px;
+    width:100px;
+}
+legend{
+    color:#222;
+}
+#form{
+    position: absolute;
+    top:20px;
+}
+.hoverToast{
+    display: none;
+    background: #000;
+    padding:6px 10px;
+    border-radius: 4px;
+    color: #fff;
+    opacity: 0.6;
+    position: fixed;
+    max-width: 200px;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+.right{
+    text-align: left!important;
+}
+.call{
+    color:#2FDF9B;
+    &.layui-btn-custom:hover {
+        color:#2FDF9B;
+    }
+}
+//音频按钮
+.audio_btn{
+    cursor: pointer;
+    .layui-icon{
+        font-size:23px;
+    }
+}
