@@ -50,7 +50,7 @@ function writeFile_index () {
             assetsPublicPath: '/',\
             proxyTable: {\
                 '/lifeservice': {\
-                    target: 'http://10.1.16.99:8080',\
+                    target: 'http://10.1.11.52:8088',\
                     changeOrigin: true,\
                     pathRewrite: {\
                         '^/lifeservice': ''\
